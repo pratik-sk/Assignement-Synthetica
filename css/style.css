@@ -1,0 +1,183 @@
+body {
+  font-family: Raleway; }
+  body .logo {
+    display: inline-block;
+    width: 340px;
+    padding: 30px 0;
+    text-align: center;
+    border-bottom: 5px solid #7AE2DE;
+    background: #414A52; }
+  body .primary-nav-wrapper {
+    display: inline-block;
+    position: absolute;
+    top: 35px;
+    margin-left: 9%; }
+    body .primary-nav-wrapper ul li {
+      display: inline-block;
+      letter-spacing: 1px;
+      font-size: 13px;
+      padding: 10px 20px;
+      border-right: 1px solid #E5E7E9;
+      text-transform: uppercase; }
+    body .primary-nav-wrapper ul li:last-child {
+      border-right: none; }
+    body .primary-nav-wrapper a {
+      color: #414A52; }
+    body .primary-nav-wrapper a:hover {
+      color: #7AE2DE; }
+  body .secondary-nav-wrapper {
+    display: inline-block;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background: #414A52;
+    padding: 35px; }
+    body .secondary-nav-wrapper ul {
+      list-style: none; }
+    body .secondary-nav-wrapper ul li {
+      display: inline-block;
+      letter-spacing: 1px;
+      font-size: 13px;
+      padding: 10px 20px;
+      text-transform: uppercase; }
+    body .secondary-nav-wrapper ul li:first-child {
+      border-right: 1px solid #323940; }
+    body .secondary-nav-wrapper .show-search {
+      background: red; }
+    body .secondary-nav-wrapper a {
+      color: #7AE2DE; }
+  body .image-carousal {
+    margin: 1.5% 0.5%; }
+  body .image-container {
+    text-align: center;
+    position: relative;
+    height: 540px;
+    background: url("../images/hero-bg-01.jpg") no-repeat center;
+    color: #FFFFFF; }
+  body .image-heading {
+    padding: 5% 3% 0 3%; }
+    body .image-heading h1 {
+      font-size: 2.8125em;
+      font-weight: normal;
+      line-height: 1.75em;
+      margin-bottom: 5%; }
+    body .image-heading a {
+      background: #7AE2DE;
+      color: #FFFFFF;
+      font-size: 0.9em;
+      padding: 1.5%;
+      text-transform: uppercase; }
+    body .image-heading a:hover {
+      background: #71D5D2;
+      transition: background 0.5s linear; }
+  body .image-description {
+    margin: 6% 16% 0 16%;
+    padding: 4% 2% 2% 2%;
+    border-top: 1px solid #FFFFFF; }
+    body .image-description span {
+      font-weight: bold;
+      font-style: italic; }
+  body .collective-container {
+    margin: 10% 5%;
+    box-sizing: border-box;
+    color: #414A52;
+    line-height: 2em; }
+  body .collective-title {
+    width: 25%;
+    display: inline-block;
+    text-align: center;
+    text-transform: uppercase; }
+    body .collective-title h3:after {
+      display: block;
+      width: 30px;
+      height: 2px;
+      margin: 3% 0 0 27%;
+      content: '';
+      background-color: #7AE2DE; }
+  body .collective-description {
+    width: 74%;
+    display: inline-block;
+    vertical-align: top; }
+    body .collective-description * {
+      margin-bottom: 5%; }
+    body .collective-description video {
+      border: 10px solid #F4F6F9;
+      margin-left: -10%;
+      height: 100%;
+      width: 65%; }
+  body #team {
+    background: #F4F6F9; }
+  body .crew-container {
+    padding: 5% 0; }
+  body .crew-title {
+    padding: 3%;
+    width: 25%;
+    display: inline-block;
+    text-align: center;
+    text-transform: uppercase;
+    color: #414A52; }
+    body .crew-title h3:after {
+      display: block;
+      width: 30px;
+      height: 2px;
+      margin: 3% 0 0 27%;
+      content: '';
+      background-color: #7AE2DE;
+      margin: 3% 0 0 37%; }
+  body .team-member {
+    padding: 0 4%; }
+  body .member-container {
+    width: 22.5%;
+    margin: 1%;
+    display: inline-block;
+    box-sizing: border-box; }
+  body .member-1 {
+    background: url("../images/crew-blaz-robar.jpg");
+    height: 300px; }
+  body .member-2 {
+    background: url("../images/crew-dude.jpg");
+    height: 300px; }
+  body .member-3 {
+    background: url("../images/crew-mary-lou.jpg");
+    height: 300px; }
+  body .member-4 {
+    background: url("../images/crew-peter-finlan.jpg");
+    height: 300px; }
+  body .skill-set {
+    padding: 1% 4%;
+    color: #414A52;
+    font-size: 0.8em; }
+    body .skill-set div {
+      position: relative;
+      width: 48%;
+      height: 50px;
+      display: inline-block;
+      margin: 0 2% 2% 0; }
+      body .skill-set div span {
+        position: absolute;
+        right: 0;
+        top: 20%; }
+    body .skill-set div:nth-child(even) {
+      margin-right: 0; }
+    body .skill-set h6 {
+      padding: 2%;
+      text-transform: uppercase; }
+    body .skill-set meter {
+      margin-left: 2%;
+      width: 100%;
+      height: 10px;
+      background: #414A52; }
+    body .skill-set meter:-moz-meter-optimum::-moz-meter-bar {
+      background: #7AE2DE; }
+  body .stats-container {
+    background: url("../images/stats-bg.jpg") no-repeat center;
+    height: 380px;
+    color: #FFFFFF; }
+  body #latest-article {
+    background: #F4F6F9; }
+  body .latest-article-container {
+    height: 500px; }
+  body .awards {
+    background: url("../images/award.jpeg") no-repeat center; }
+
+/*# sourceMappingURL=style.css.map */
