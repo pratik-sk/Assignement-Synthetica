@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		var up = true;
+var value = 0;
+var increment = 1;
+var ceiling = 100;
+
+function PerformCalc()
+{
+if (up == true && value <= ceiling)
+{
+  value += increment
+
+  if (value == ceiling)
+  {up = false;}
+}
+
+ document.getElementById('counter').innerHTML = 'Value: ' + value + '<br />';
+}
+setInterval(PerformCalc, 100);
+	</script>
+</head>
+<body>
+<div id="counter"></div>
+</body>
+</html>

@@ -1,0 +1,15 @@
+@mixin title-heading{
+	width:25%;
+	display:inline-block;
+	text-align:center;
+	text-transform:uppercase;
+}
+
+@mixin title-heading-after{
+	display: block;
+	width: 30px;
+	height: 2px;
+	margin: 3% 0 0 27%;
+	content: '';
+	background-color: $lightblue;
+}
