@@ -24,3 +24,26 @@ dots[i].className = dots[i].className.replace(" active","");
 slides[slideIndex-1].style.display = "block";
 dots[slideIndex-1].className += " active";
 }
+
+$('#search-btn').click(function() {
+    $('.search-bar').toggle();
+});
+
+$('#close-btn').click(function() {
+    $('.search-bar').toggle();
+});
+
+$('.nav-icon').click(function(){
+	this.classList.toggle("change");
+    $('.primary-nav-wrapper').toggle();
+ });
+
+$('#search-input').click(function(){
+	this.style.width="70%";
+});
+
+$('#search-input').keyup(function (e) {
+    if (e.keyCode === 13) {
+       alert('Ready for implementation')
+    }
+  });

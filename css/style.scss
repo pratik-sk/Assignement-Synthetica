@@ -4,6 +4,11 @@
 @import 'footer';
 @import 'clearfix';
 
+@font-face {
+    font-family: emojiFont;
+    src: url(../fonts/EmojiSymbolsFont-master/font/EmojiSymbols-Regular.woff);
+}
+
 body{
 	font-family: Raleway;
 }
@@ -141,6 +146,7 @@ body{
 	}
 }
 
+
 .collective-description{
 	width:74%;
 	display:inline-block;
@@ -153,8 +159,10 @@ body{
 	video{
 		border:10px solid #F4F6F9;
 		margin-left:-10%;
-		height:100%;
 		width:65%;
+		height: 300px;
+	    background: black;
+	    border: none;
 	}
 }
 
@@ -215,23 +223,27 @@ body{
 	}
 }
 .member-1{
-	background:url("../images/crew-peter-finlan.jpg");
+	background:url("../images/crew-peter-finlan.jpg") no-repeat;
 	height:300px;
+	background-size:100%;
 }
 
 .member-2{
-	background:url("../images/crew-blaz-robar.jpg");
+	background:url("../images/crew-blaz-robar.jpg") no-repeat;
 	height:300px;
+	background-size:100%;
 }
 
 .member-3{
-	background:url("../images/crew-mary-lou.jpg");
+	background:url("../images/crew-mary-lou.jpg") no-repeat;
 	height:300px;
+	background-size:100%;
 }
 
 .member-4{
-	background:url("../images/crew-dude.jpg");
+	background:url("../images/crew-dude.jpg") no-repeat;
 	height:300px;
+	background-size:100%;
 }
 
 .skill-set{
@@ -304,8 +316,14 @@ body{
 		font-weight:lighter;
 	}
 }
-.awards{
-	background:url("../images/award.jpeg") no-repeat center ;
+.award{
+	background: url("../images/iconcup.png") no-repeat 40px 5px;
+}
+.article{
+	background: url("../images/iconbook.png") no-repeat 40px 5px;
+}
+.freebie{
+	background: url("../images/iconpen.png") no-repeat 40px 5px;
 }
 
 #latest-article{
@@ -352,7 +370,6 @@ body{
 		background: url("../images/dd-arrow.png") no-repeat 230px 10px;
 		-webkit-appearance: none;
         -moz-appearance: none;
-        background-color:none;
 	}
 }
 
@@ -395,7 +412,11 @@ body{
 		float:right;
 	}
 	li:last-child:before{
-		content:'a';
+		content:'';
+		height: 10px;
+	    width: 10px;
+	    display: inline-block;
+	    background: url('../images/chat.png');
 	}
 
 	li:last-child:after{
@@ -481,9 +502,7 @@ body{
 	float:left;
 	position:relative;
 	margin:-1px;
-	img{
-		width:100%;
-	}
+	overflow:hidden;
 }
 
 .freshest-image:hover{
@@ -517,7 +536,20 @@ body{
 	.like-wrapper{
 		position: absolute;
 		top: 6%;
-		left: 10%;
+		left: 6%;
+		width:14%;
+
+		a{
+			display: inline-block;
+			height: 14px;
+			width: 14px;
+			background: url('../images/favorite.png');
+		}
+
+		span{
+			display: inline-block;
+			padding-left: 8%;
+		}
 	}
 }
 
@@ -593,5 +625,212 @@ body{
 	a:hover{
 		background:$white;
 		color:$lightblue;
+	}
+}
+
+@media screen and (max-device-width: 375px){
+	.slideshow-container{
+		margin:2%;
+		width:96%;
+	}
+
+	.myslides{
+		display: block;
+	    width: 100%;
+	    word-wrap: break-word;
+	}
+
+	.image-heading{
+		font-size:0.5em;
+		padding: 18% 3%;
+		margin:0;
+		width:94%;
+
+		h1{
+			margin-bottom:12%;
+		}
+
+		a{
+			font-size:2em;
+		}
+	}
+
+	.image-caption{
+		margin:0;
+		padding:5%;
+		width:90%;
+		top:60%;
+	}
+
+	.dots-container{
+		width:100%;
+		right:0;
+		top:74%;
+
+		.dots{
+			margin:2%;
+		}
+	}
+
+	.collective-container{
+		width:100%;
+		padding:5%;
+		margin:0;
+	}
+
+	.collective-title{
+		text-align:left;
+		width:100%;
+
+		h3{
+			margin:10% 0;
+		}
+
+		h3:after{
+			margin:0;
+		}
+	}
+
+	.collective-description{
+		word-wrap:break-word;
+		width:100%;
+
+		video{
+			margin:0;
+			width:94%;
+			height: 270px;
+		}
+	}
+
+	.crew-title{
+		width:90%;
+		text-align:left;
+		padding:5%;
+
+		h3:after{
+			margin:2% 0;
+		}
+
+	}
+	.team-member{
+		text-align:center;
+	}
+	.member-container{
+		width:90%;
+	}
+
+	.skill-set{
+		div{
+			width:100%;
+		}
+	}
+
+	.stats-container{
+		padding-left:5%;
+	}
+	.stats-wrapper{
+	    font-size: 2em;
+	    width: 90%;
+	    display: block;
+	    text-align: left;
+	    border-right: 1px solid;
+	    padding: 7% 1%;
+	    border: none;
+	    margin-top:0;
+	}
+
+	.stats-description{
+		padding-left:45%;
+	}
+
+	.article-title{
+		width:90%;
+		text-align:left;
+		margin:7% 5%;
+
+		h3:after{
+			margin:2% 0;
+		}
+	}
+
+	.sort-by-filter{
+	    width: 92%;
+	    margin: 5% 11%;
+	    display: block;
+	    right: -10%;
+
+	    p{
+	    	margin:5% 0;
+	    }
+	    select{
+	    	width:90%;
+	    	background: url(../images/dd-arrow.png) no-repeat 95% 60%;
+	    }
+	}
+
+	.article-container{
+		margin:46% 0 5% 5%;
+	}
+
+	.article-div{
+		width:94%;
+		margin-bottom:7%;
+	}
+
+	.view-more{
+		width: 55%;
+   	    margin: 5% 29% 27%;
+	}
+
+	.freshest-image{
+		height:380px;
+		width:100%;
+
+		img{
+			height:100%;
+		}
+	}
+	.freshest-title{
+		width: 86%;
+	    text-align: left;
+	    padding: 7%;
+
+	    h3:after{
+	    	margin:4% 1%;
+	    }
+	}
+	.freshest-description{
+
+		p{
+			width:85%;
+			border:none;
+			margin:5% 2%;
+		}
+	}
+
+	.freshest-image-container {
+		margin-bottom:20%;
+	}
+
+	#get-started{
+		padding:8%;
+	}
+
+	.get-started-container{
+		font-size:1.5em;
+		text-align:center;
+	}
+
+	.get-started-description{
+		margin:1% 5%;
+		line-height:1.5em;
+	}
+
+	.get-started-button{
+		margin:15% 30%;
+
+		a{
+			padding:13px;
+		}
 	}
 }

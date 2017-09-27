@@ -1,20 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Synthetica</title>
+	<title>Synthetica HTML5/CSS3 Template</title>
 	<meta charset="UTF-8">
-	<link rel="icon" href="./images/synthetica-logo.png">
+	<link rel="icon" href="./images/synthetica-logo-symbol.png">
 	<link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet"> 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="./css/reset.css">
 	<link rel="stylesheet" type="text/css" href="./css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 <body>
 	<div class="container-wrap">
 		<div class="header-nav-wrapper">
 			<div class="logo">
 				<a href="index.html">
-					<img src="./images/synthetica-logo.png">
+					<img src="./images/synthetica-logo.png" alt="synthetica-logo"/>
 				</a>
 			</div>
 			<div class="primary-nav-wrapper">
@@ -41,11 +42,19 @@
 							<a href="#subscribe">Subscribe</a>
 						</li>
 						<li class="search">
-							<a href="#search" class="show-search"></a>
+							<a href="#search" class="show-search" id="search-btn">&#128269;</a>
 						</li>
 					</ul>					
 			</div>
-			<div class="navicon"></div>			
+			<div class="search-bar">
+				<input type="text" name="search" id="search-input" placeholder="Start typing then hit Enter to Search" title="Press Enter to Search">
+				<a href="#" id="close-btn">&#10060;</a>
+			</div>
+			<div class="nav-icon">
+				  <div class="bar1"></div>
+				  <div class="bar2"></div>
+				  <div class="bar3"></div>
+			</div>		
 		</div>
 
 		<div class="slideshow-container">
@@ -75,7 +84,7 @@
 			<div class="myslides fade image-3">
 				<div class="image-heading">
 					<h1>Download Synthetica today, it's free forever.</h1>
-					<a href="" class="">Download Template</a>
+					<a href="#" class="">Download Template</a>
 				</div>
 				<div class="image-caption">
 					<p>Available exclusively from Codrops. 
@@ -134,9 +143,9 @@
 					<p>
 						8-bit aesthetic kitsch 90's humblebrag. Gastropub tacos hoodie letterpress, banjo normcore trust fund hella. Kinfolk gluten-free lo-fi quinoa. Pabst kitsch ennui hoodie meggings banjo. Schlitz tacos kitsch godard before they sold out. Kale chips chillwave kickstarter photo booth cronut cold-pressed. Banjo fixie umami kombucha affogato gluten-free authentic slow-carb hashtag, hammock pour-over chambray viral VHS normcore.
 					</p>
-					<video class="collective-video">
-						<source src="movie.mp4" type="video/mp4">
-	  					<source src="movie.ogg" type="video/ogg">
+					<video class="collective-video" controls>
+						<source src="./video/oceans.mp4" type="video/mp4">
+	  					<source src="./video/oceans.ogg" type="video/ogg">
 					</video>
 					<p>
 						8-bit aesthetic kitsch 90's humblebrag. Gastropub tacos hoodie letterpress, banjo normcore trust fund hella. Kinfolk gluten-free lo-fi quinoa. 
@@ -226,21 +235,21 @@
 			<div class="stats-container">
 				<div class="stats-wrapper">
 					<div class="awards"></div>
-					<div class="stats-description">
+					<div class="stats-description award">
 						<p>24</p>
 						<p>Awards Won</p>
 					</div>
 				</div>
 				<div class="stats-wrapper">
 					<div class="articles"></div>
-					<div class="stats-description">
+					<div class="stats-description article">
 						<p>341</p>
 						<p>Articles</p>
 					</div>
 				</div>
 				<div class="stats-wrapper">
 					<div class="freebies"></div>
-					<div class="stats-description">
+					<div class="stats-description freebie">
 						<p>43</p>
 						<p>Freebies</p>
 					</div>
@@ -460,13 +469,13 @@
 								<a href="">Download</a>
 							</div>
 						</div>
-						<img src="./images/sedna-freebie.jpg"/>
+						<img src="./images/sedna-freebie.jpg" alt="sedna-freebie"/>
 					</div>
 
 					<div class="freshest-image">
 						<div class="freshest-image-details">
 							<div class="like-wrapper">
-								<a href="">a</a>
+								<a href=""></a>
 								<span>41</span>
 							</div>
 							<div class="freebie-content">
@@ -477,7 +486,7 @@
 								<a href="">Download</a>
 							</div>
 						</div>
-						<img src="./images/landio-freebie.jpg"/>
+						<img src="./images/landio-freebie.jpg" alt="landio-freebie" />
 					</div>
 
 					<div class="freshest-image">
@@ -494,13 +503,14 @@
 								<a href="">Download</a>
 							</div>
 						</div>
-						<img src="./images/freebie-03.jpg"/>
+						<img src="./images/freebie-03.jpg" alt="freebie-03"/>
 					</div>
 
 					<div class="freshest-image">
 						<div class="freshest-image-details">
 							<div class="like-wrapper">
 								<a href=""></a>
+								<!-- <a href="">&#9825;</a> -->
 								<span>58</span>
 							</div>
 							<div class="freebie-content">
@@ -511,7 +521,7 @@
 								<a href="">Download</a>
 							</div>
 						</div>
-						<img src="./images/freebie-04.jpg"/>
+						<img src="./images/freebie-04.jpg" alt="freebie-04" />
 					</div>
 				</div>
 
@@ -535,8 +545,8 @@
 
 		<footer>
 			<div class="company-logo">
-				<img src="./images/synthetica-logo.png">
-				<p>A free HTML5/CSS3 template, exclusively for Codrops</p>
+				<img src="./images/synthetica-logo.png" alt="synthetica-logo"/>
+				<p>A free HTML5/CSS3 template, exclusively for <b><i>Codrops</i></b></p>
 			</div>
 
 			<div class="footer-nav">
