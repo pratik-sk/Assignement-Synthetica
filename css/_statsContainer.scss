@@ -1,0 +1,76 @@
+.stats-container{
+	background:url("../images/stats-bg.jpg") no-repeat center ;
+	height:380px;
+	color:$white;
+	padding-left:10%;
+}
+
+.stats-wrapper{
+	font-size:2em;
+	width:32%;
+	display:inline-block;
+	text-align:left;
+	margin-top:15%;
+	border-right:1px solid;
+
+	&:last-child{
+		border:none;
+	}
+}
+
+.stats-description{
+	padding-left:35%;
+	line-height:1.3em;
+
+	p:first-child{
+		font-size:1.5em;
+	}
+
+	p:last-child{
+		font-size:0.6em;
+		font-weight:lighter;
+	}
+}
+.award{
+	background: url("../images/iconcup.png") no-repeat 40px 5px;
+}
+.article{
+	background: url("../images/iconbook.png") no-repeat 40px 5px;
+}
+.freebie{
+	background: url("../images/iconpen.png") no-repeat 40px 5px;
+}
+
+@media screen and (max-device-width: 375px){
+	
+	.stats-container{
+		padding-left:5%;
+	}
+	.stats-wrapper{
+	    font-size: 2em;
+	    width: 90%;
+	    display: block;
+	    text-align: left;
+	    border-right: 1px solid;
+	    padding: 7% 1%;
+	    border: none;
+	    margin-top:0;
+	}
+
+	.stats-description{
+		padding-left:45%;
+	}
+}
+
+@media screen and (min-device-width:768px) and (max-device-width:1000px) {
+	.stats-container{
+		padding-left:0;
+	}
+	.stats-wrapper{
+		border:none;
+		width:32%;
+	}
+	.stats-description{
+		padding-left:48%;
+	}
+}

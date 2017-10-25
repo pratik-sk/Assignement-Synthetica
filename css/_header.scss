@@ -211,3 +211,45 @@
 		display:inline-block;
 	}
 }
+
+@media screen and (min-device-width: 768px) and (max-device-width:1000px){
+	.primary-nav-wrapper{
+		display:none;
+	    text-align: center;
+	    background: $darkslategary;
+	    width: 100%;
+	    margin: 0;
+	    height: 100%;
+	    position: absolute;
+	    top: 0;
+	    z-index:2;
+	    color:$white;
+
+	    ul{
+	    	margin-top:25%;
+	    }
+	    ul li{
+	    	font-size:2em;
+	    	padding: 7% 1%;
+  		    border: none;
+  		    display:block;
+	    }
+
+	    a{
+	    	color:$white;
+	    }
+	}
+	.secondary-nav-wrapper{
+		display:none;
+	}
+	.search-bar{
+		display:none;
+	}
+	.nav-icon{
+		display: block;
+	    background: $darkslategary;
+	    padding: 31px;
+	    top:0;
+	    right:0;
+	}
+}

@@ -22,16 +22,16 @@
 				<nav>
 					<ul class="primary-nav">
 						<li>
-							<a href="">The Collective</a>
+							<a href="#introduction">The Collective</a>
 						</li>
 						<li>
-							<a href="">The Crew</a>
+							<a href="#team">The Crew</a>
 						</li>
 						<li>
-							<a href="">Articles</a>
+							<a href="#latest-article">Articles</a>
 						</li>
 						<li>
-							<a href="">Freebies</a>
+							<a href="#freshest-freebies">Freebies</a>
 						</li>
 					</ul>
 				</nav>
@@ -210,22 +210,22 @@
 					<div class="experience-design">
 						<h6>Experience Design</h6>
 						<span>90%</span>
-						<meter min="0" max="100" low="0" high="0" optimum="100" value="90"></meter>
+						<progress id="expDesignCountBar" min="0" max="100" low="0" high="0" optimum="100" value="90"></progress>
 					</div>
 					<div class="interactive-prototyping">
 						<h6>Interactive Prototyping</h6>
 						<span>80%</span>
-						<meter min="0" max="100" low="0" high="0" optimum="100" value="80"></meter>
+						<progress id="interactivePrototypeCountBar" min="0" max="100" low="0" high="0" optimum="100" value="80"></progress>
 					</div>
 					<div class="html-skill">
 						<h6>HTML5/CSS3</h6>
 						<span>95%</span>
-						<meter min="0" max="100" low="0" high="0" optimum="100" value="95"></meter>
+						<progress id="htmlSkillCountBar" min="0" max="100" low="0" high="0" optimum="100" value="95"></progress>
 					</div>
 					<div class="visual-design">
 						<h6>Visual Design</h6>
 						<span>90%</span>
-						<meter min="0" max="100" low="0" high="0" optimum="100" value="90"></meter>
+						<progress id="visulaDesignCountBar" min="0" max="100" low="0" high="0" optimum="100" value="90"></progress>
 					</div>
 				</div>
 			</div>
@@ -236,21 +236,21 @@
 				<div class="stats-wrapper">
 					<div class="awards"></div>
 					<div class="stats-description award">
-						<p>24</p>
+						<p id="awardCount"></p>
 						<p>Awards Won</p>
 					</div>
 				</div>
 				<div class="stats-wrapper">
 					<div class="articles"></div>
 					<div class="stats-description article">
-						<p>341</p>
+						<p id="articleCount"></p>
 						<p>Articles</p>
 					</div>
 				</div>
 				<div class="stats-wrapper">
 					<div class="freebies"></div>
 					<div class="stats-description freebie">
-						<p>43</p>
+						<p id="freebiesCount"></p>
 						<p>Freebies</p>
 					</div>
 				</div>
@@ -552,16 +552,16 @@
 			<div class="footer-nav">
 				<ul class="footer-primary-nav">
 					<li>
-						<a href="">The Collective</a>
+						<a href="#introduction">The Collective</a>
 					</li>
 					<li>
-						<a href="">The Crew</a>
+						<a href="#team">The Crew</a>
 					</li>
 					<li>
-						<a href="">Articles</a>
+						<a href="#latest-article">Articles</a>
 					</li>
 					<li>
-						<a href="">Freebies</a>
+						<a href="#freshest-freebies">Freebies</a>
 					</li>
 					<li>
 						<a href="">Subscribe</a>
@@ -569,10 +569,21 @@
 				</ul>
 				<ul class="footer-social-nav">
 					<li>
-						<a href="">Licence</a>
+						<a href="#">Licence</a>
 					</li>
 					<li>
-						<a href="">Share</a>
+						<a id="social-share">Share</a>
+					</li>
+				</ul>
+				<ul class="social-media-share">
+					<li>
+						<a href="#" class="facebook-icon"></a>
+					</li>
+					<li>
+						<a href="#" class="twitter-icon"></a>
+					</li>
+					<li>
+						<a href="#" class="linkedin-icon"></a>
 					</li>
 				</ul>
 			</div>
@@ -583,7 +594,7 @@
 			</div>
 		</footer>
 	</div>
-
 	<script type="text/javascript" src="./js/script.js"></script>
 </body>
 </html>
+

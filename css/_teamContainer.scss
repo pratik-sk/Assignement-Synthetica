@@ -1,0 +1,165 @@
+#team{
+	background:#F4F6F9;
+}
+
+.crew-container{
+	padding:5% 0;
+}
+
+.crew-title{
+	padding:3%;
+	@include title-heading;
+	color: #414A52;
+	h3{
+
+		&:after{
+			@include title-heading-after;
+			margin: 3% 0 0 37%;
+		}
+	}
+}
+
+.team-member{
+	padding:0 4%;
+}
+.member-container{
+	position:relative;
+	width:22.5%;
+	margin:1%;
+	display:inline-block;
+	box-sizing:border-box;
+
+	.member-info{
+		position:absolute;
+		width:100%;
+		height:100%;
+		background:rgba(137,220,217,0.8);
+		display:none;
+		color: $white;
+		text-align: center;
+		line-height: 2em;
+	}
+
+	.member-name-skills{
+		position:absolute;
+		top:27%;
+
+		h2{
+			text-transform:uppercase;
+		}
+	}
+}
+.member-container:hover{
+	.member-info{
+		display:block;
+	}
+}
+.member-1{
+	background:url("../images/crew-peter-finlan.jpg") no-repeat;
+	height:300px;
+	background-size:100%;
+}
+
+.member-2{
+	background:url("../images/crew-blaz-robar.jpg") no-repeat;
+	height:300px;
+	background-size:100%;
+}
+
+.member-3{
+	background:url("../images/crew-mary-lou.jpg") no-repeat;
+	height:300px;
+	background-size:100%;
+}
+
+.member-4{
+	background:url("../images/crew-dude.jpg") no-repeat;
+	height:300px;
+	background-size:100%;
+}
+
+.skill-set{
+	padding:1% 4%;
+	color: #414A52;
+	font-size:0.8em;
+	div{
+		position:relative;
+		width:48%;
+		height:50px;
+		display:inline-block;
+		margin:0 2% 2% 0;
+
+		span{
+			position:absolute;
+			right:0;
+			top:20%;
+		}
+	}
+
+	div:nth-child(even){
+		margin-right:0;
+	}
+
+	h6{
+		padding:2%;
+		text-transform:uppercase;
+	}
+	progress::-moz-progress-bar { 
+		background: #7AE2DE;
+	}
+   
+       progress::-webkit-progress-value { 
+       	background: $lightblue;
+    }
+	progress{
+		margin-left:2%;
+		width:100%;
+		height:10px;
+		background:$darkslategary;
+		border:none;
+	}
+	
+}
+
+@media screen and (max-device-width: 375px){
+	.crew-title{
+		width:90%;
+		text-align:left;
+		padding:5%;
+
+		h3:after{
+			margin:2% 0;
+		}
+	}
+	.team-member{
+		text-align:center;
+	}
+	.member-container{
+		width:90%;
+	}
+
+	.skill-set{
+		div{
+			width:100%;
+		}
+	}
+}
+
+@media screen and (min-device-width:768px) and (max-device-width:1000px) {
+	.crew-title{
+		h3{
+			&:after{
+				margin: 3% 0 0 29%;
+			}
+	}
+}
+
+	.member-container{
+		width:45%;
+	}
+	.skill-set{
+		div{
+			width:92%;
+		}
+	}
+}

@@ -1,5 +1,5 @@
 footer{
-	background:#414A52;
+	background:$darkslategary;
 	padding:8% 5%;
 
 	.company-logo{
@@ -7,10 +7,14 @@ footer{
 		border-bottom: 1px solid #5D656C;
 
 		p{
-			color: white;
+			color: $white;
 			padding: 2% 0;
 		}
 	}
+}
+
+.footer-nav{
+	position:relative;
 }
 
 .footer-primary-nav{
@@ -47,6 +51,63 @@ footer{
 	}
 }
 
+.social-media-share{
+	display: none;
+    background: $white;
+    position: absolute;
+    right: 1%;
+    top: -19%;
+    padding: 0% 2%;
+    border-radius: 5px;
+    width:10%;
+
+	li{
+		display: inline-block;
+    	padding: 3% 0%;
+    	width:30%;
+    	.facebook-icon{
+    		display:inline-block;
+    		width:20px;
+    		height:20px;
+    		background:url(../images/v3-circle.png) 245px 460px;
+
+    		&:hover{
+    			background:url(../images/v3-circle.png) 677px 460px;
+    		}
+    	}
+
+    	.twitter-icon{
+    		display:inline-block;
+    		width:20px;
+    		height:20px;
+    		background:url(../images/v3-circle.png) 99px 208px;
+    		&:hover{
+    			background:url(../images/v3-circle.png) 531px 208px;
+    		}
+    	}
+
+    	.linkedin-icon{
+    		display:inline-block;
+    		width:20px;
+    		height:20px;
+    		background:url(../images/v3-circle.png) 352px 353px;
+    		&:hover{
+    			background:url(../images/v3-circle.png) 784px 353px;
+    		}
+    	}
+
+	}
+}
+
+.social-media-share:after{
+	position: absolute;
+    top: 100%;
+    left: 75%;
+    content: ' ';
+    border: solid transparent;
+    border-width: 7px;
+    border-top-color: #fff;
+}
 .footer-desclaimer{
 	padding:1%;
 	color:#5D656C;
@@ -100,5 +161,55 @@ footer{
 	.footer-desclaimer{
 		margin:4%;
 		line-height:1.75em;
+	}
+}
+
+@media screen and (min-device-width:376px) and (max-device-width: 768px){
+	footer{
+		font-size:1.5em;
+
+		.company-logo {
+			width:90%;
+			padding:5%;
+
+			p{
+				margin:5% 0;
+				line-height:1.75em;
+				font-size:0.9em;
+			}
+		}
+	}
+
+	.footer-primary-nav{
+		width:90%;
+		padding:1% 5% 0%;
+
+		li{
+			display:block;
+			padding:13% 3% 8% 1%;
+			border-bottom:1px dotted $white;
+		}
+	}
+
+	.footer-social-nav{
+		width:90%;
+		margin:0% 5%;
+		li{
+			display: block;
+    		padding: 7% 0% 8% 1%;
+   		    border-bottom: 1px dotted $white;
+		}
+	}
+
+	.footer-desclaimer{
+		margin:4%;
+		line-height:1.75em;
+	}
+}
+@media screen and (min-device-width:376px) and (max-device-width: 768px){
+	.footer-primary-nav{
+		li{
+			padding:3% 3% 5% 1%;
+		}
 	}
 }
