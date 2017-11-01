@@ -67,7 +67,7 @@ function awardCounter(elementName,val,lastVal){
    clearTimeout(timeOut);
  }
 }
-awardCounter("awardCount",0,24);
+// awardCounter("awardCount",0,24);
 
 function articleCounter(val){
  var finalval=document.getElementById("articleCount");
@@ -79,7 +79,7 @@ function articleCounter(val){
    clearTimeout(timeOut);
  }
 }
-articleCounter(0);
+// articleCounter(0);
 
 function freebiesCounter(val){
  var finalval=document.getElementById("freebiesCount");
@@ -91,7 +91,7 @@ function freebiesCounter(val){
    clearTimeout(timeOut);
  }
 }
-freebiesCounter(0);
+// freebiesCounter(0);
 
 //+++++++++++++++++Progress Bar Scrip++++++++++++++++++++++++++++++++//
 function progressBar(val){
@@ -116,7 +116,6 @@ function progressBar(val){
    clearTimeout(timeOut);
  }
 }
-progressBar(0);
 
 //++++++++++++++++++++Social Share nav+++++++++++++++++++++++++++//
 
@@ -140,3 +139,26 @@ $(".footer-primary-nav").find("a").click(function(e) {
         scrollTop: $(section).offset().top
     },1000);
 });
+
+// function testScroll(ev){
+//     if(window.pageYOffset>2000){
+//     	progressBar(0);
+//     	$(window).off("scroll");
+//     }
+// }
+// window.onscroll=testScroll
+window.onscroll = myScroll;
+var counter = 0; // Global Variable
+function myScroll(){
+   //var val = document.getElementById("value");
+   //val.innerHTML = 'pageYOffset = ' + window.pageYOffset;
+   if(counter == 0){ // if counter is 1, it will not execute
+     if(window.pageYOffset > 1500){
+     	progressBar(0);
+     	awardCounter("awardCount",0,24);
+ 		articleCounter(0);
+ 		freebiesCounter(0);
+        counter++; // increment the counter by 1, new value = 1
+     }
+   }
+  }
