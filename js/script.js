@@ -53,7 +53,7 @@ $('#search-input').keyup(function (e) {
   });
 
 
-//++++++++++++++++++Counter Increment Script++++++++++++++++++++++++//
+//++++++++++++++++++Counter Increment Script+++++++++++++++++++++++++//
 
 function awardCounter(elementName,val,lastVal){
  var finalval=document.getElementById(elementName);
