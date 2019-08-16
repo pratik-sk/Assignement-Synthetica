@@ -1,4 +1,4 @@
-//++++++++++++++++Carousal Script+++++++++++++++++++++++++++++++//
+//++++++++++++++++Carousal Script++++++++++++++++++++++++++++++++//
 
 var slideIndex = 1;
 showSlide(slideIndex);
