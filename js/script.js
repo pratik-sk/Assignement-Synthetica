@@ -33,7 +33,7 @@ $('#search-btn').click(function() {
 });
 
 $('#close-btn').click(function() {
-    $('.search-bar').toggle();
+    $('.search-bar').toggle(); 
 });
 
 $('.nav-icon').click(function(){
